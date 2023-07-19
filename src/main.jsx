@@ -4,11 +4,19 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Dashboard from "./layout/dashboard/Dashboard";
+import Home from "./components/home/Home";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <div className="display-1">Hello world!</div>,
+		element: <Dashboard></Dashboard>,
+    children : [
+      {
+        path : "/",
+        element : <Home></Home>
+      }
+    ]
 	},
 ]);
 
