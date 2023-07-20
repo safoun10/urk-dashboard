@@ -40,22 +40,30 @@ const Profile = () => {
 						</div>
 					</>
 
-					<div className="btn want-btn">I want to</div>
+					<select className="btn want-btn">
+						<option>I want to</option>
+						<option>Deposit</option>
+						<option>Withdraw</option>
+						<option>Invest</option>
+					</select>
 				</div>
 
 				<div>
 					<div className="pt-3 fs-4 fw-bold">Recent Transactions</div>
 
-                    <div className="transactions">
-                        <div className="text-secondary pb-1">2020-08-07</div>
-                        <div className="">Withdrawal Transfer to Bank-XXX11</div>
-                    </div>
-                    <div className="transactions">
-                        <div className="text-secondary pb-1">2020-08-07</div>
-                        <div className="">Withdrawal Transfer to Bank-XXX11</div>
-                    </div>
+					<div className="transactions">
+						<div className="text-secondary pb-1">2020-08-07</div>
+						<div className="">
+							Withdrawal Transfer to Bank-XXX11
+						</div>
+					</div>
+					<div className="transactions">
+						<div className="text-secondary pb-1">2020-08-07</div>
+						<div className="">
+							Withdrawal Transfer to Bank-XXX11
+						</div>
+					</div>
 				</div>
-
 			</div>
 		</div>
 	);
