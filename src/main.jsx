@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       }
     ]
 	},
+  {
+    path : "*",
+    element : <div className="unknown-page">404 - PAGE NOT FOUND</div>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
