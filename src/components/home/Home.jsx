@@ -2,6 +2,7 @@ import React from 'react';
 import "./Home.css"
 import Profile from '../profile/Profile';
 import Income from '../income/Income';
+import Retirement from '../retirement/Retirement';
 
 const Home = () => {
     return (
@@ -13,7 +14,9 @@ const Home = () => {
                 <div className='col-6'>
                     <Income></Income>
                 </div>
-                <div className='col-2'>strategy</div>
+                <div className='col-2'>
+                    <Retirement></Retirement>
+                </div>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import Contribution from "../contribution/Contribution";
 
 const Income = () => {
 	return (
-		<div className="pt-4">
+		<div className="pt-4 income-section">
 			<div className="income-head fs-5 text-one">Retirement Income</div>
 			<div className="fs-1 fw-bold">Starting Year 2056</div>
 
