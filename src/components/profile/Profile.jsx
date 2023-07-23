@@ -4,7 +4,7 @@ import "./Profile.css";
 const Profile = () => {
 	return (
 		<div className="pt-4 px-5 profile-section">
-			<div className="d-flex align-items-center gap-3">
+			<div className="d-flex align-items-center gap-3 profile-photo-box">
 				<img
 					src="https://i.postimg.cc/R0cZtGy4/istockphoto-477901370-612x612.jpg"
 					alt="profile"

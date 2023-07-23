@@ -13,17 +13,29 @@
 
 .want-btn:hover {
 	background-color: #4935ff;
-    color: white;
+	color: white;
 }
 
-.profile-section{
-    background-color: #f5f2f2f3;
-    min-height: 100vh;
-    margin-right: 70px !important;
+.profile-section {
+	background-color: #f5f2f2f3;
+	min-height: 100vh;
+	margin-right: 70px !important;
 }
 
-.transactions{
-    padding: 10px 0;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #c5dff8;
+.transactions {
+	padding: 10px 0;
+	margin-bottom: 8px;
+	border-bottom: 2px solid #c5dff8;
+}
+
+@media only screen and (max-width: 1300px) {
+	.profile-section {
+		padding: 20px 15px !important;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.profile-photo-box{
+		flex-direction: column;
+	}
 }
