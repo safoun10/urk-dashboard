@@ -229,9 +229,36 @@ const Contribution = () => {
 					/>
 				</BarChart>
 			</section>
+
 			<section className="py-3 d-none lg">
 				<BarChart
 					width={550}
+					height={220}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
+				</BarChart>
+			</section>
+
+			<section className="py-3 d-none mlg">
+				<BarChart
+					width={450}
 					height={220}
 					data={data}
 					margin={{

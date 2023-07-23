@@ -18,20 +18,20 @@ const SideNav = () => {
 							alt=""
 						/>
 					</div>
-					<div className="fs-4">
+					<div className="fs-4 text-secondary">
 						<FaSearch></FaSearch>
 					</div>
 				</div>
 				<div className="mt-5 d-flex flex-column gap-4 justify-content-center align-items-center">
-					<GoHome className="fs-4 active"></GoHome>
-					<FaRegNewspaper className="fs-4"></FaRegNewspaper>
-					<FaRegListAlt className="fs-4"></FaRegListAlt>
-					<CgProfile className="fs-4"></CgProfile>
+					<GoHome className="fs-4 text-secondary active"></GoHome>
+					<FaRegNewspaper className="fs-4 text-secondary"></FaRegNewspaper>
+					<FaRegListAlt className="fs-4 text-secondary"></FaRegListAlt>
+					<CgProfile className="fs-4 text-secondary"></CgProfile>
 				</div>
 			</div>
 			<div className="d-flex flex-column gap-4 mb-4">
-				<IoMdNotifications className="fs-4"></IoMdNotifications>
-				<RxExit className="fs-4"></RxExit>
+				<IoMdNotifications className="fs-4 text-secondary"></IoMdNotifications>
+				<RxExit className="fs-4 text-secondary"></RxExit>
 			</div>
 		</div>
 	);

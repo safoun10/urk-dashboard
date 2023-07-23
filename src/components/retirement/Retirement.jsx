@@ -9,7 +9,7 @@ const Retirement = () => {
 
 	return (
 		<div>
-			<section className="strategy-section p-4">
+			<section className="strategy-section p-4 mb-2">
 				<div className="fw-bold text-one pb-3">Retirement Strategy</div>
 
 				<div className="pt-4">
@@ -62,7 +62,7 @@ const Retirement = () => {
 					</Link>
 				</div>
 			</section>
-			<section className="add-section">
+			<section className="add-section d-none d-lg-block">
 				<div>
 					Are you considering a <br />{" "}
 					<span className="fw-bold">Housing Advance?</span>
