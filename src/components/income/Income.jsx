@@ -1,27 +1,28 @@
 import React from "react";
 import "./Income.css";
 import Contribution from "../contribution/Contribution";
+import Donuts from "../donut/Donuts";
 
 const Income = () => {
 	return (
-		<div className="pt-4 income-section">
-			<div className="income-head fs-5 text-one">Retirement Income</div>
-			<div className="fs-1 fw-bold">Starting Year 2056</div>
+		<div className="pt-2 income-section">
+			<div className="income-head fs-6 text-one">Retirement Income</div>
+			<div className="fs-2 fw-bold">Starting Year 2056</div>
 
-			<div className="row pt-3 pb-2">
-				<div className="p-3 col-4">
+			<div className="row pb-2">
+				<div className="px-4 py-2 col-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300,000</div>
 						<div className="text-secondary">My goal</div>
 					</div>
 				</div>
-				<div className="p-3 col-4">
+				<div className="px-4 py-2 col-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">59%</div>
 						<div className="text-secondary">Goal achieved</div>
 					</div>
 				</div>
-				<div className="p-3 col-4">
+				<div className="px-4 py-2 col-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300</div>
 						<div className="text-secondary">
@@ -77,7 +78,10 @@ const Income = () => {
 							</select>
 						</div>
 					</div>
-					<div className="col-8">donut chart</div>
+
+					<div className="col-8">
+						<Donuts></Donuts>
+					</div>
 				</div>
 			</div>
 		</div>

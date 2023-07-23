@@ -1,0 +1,44 @@
+.donut-1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    border-left: 15px solid rgba(0, 0, 255, 0.225);
+    border-right: 15px solid blue;
+    border-top: 15px solid blue;
+    border-bottom: 15px solid blue;
+    transform: rotate(45deg);
+    animation: move 1s ease-in;
+}
+
+.text-1 {
+    display: block;
+    position: relative;
+    top: -58px;
+    left: 30px;
+    font-size: larger;
+    user-select: none;
+}
+
+@keyframes move {
+    0% {
+        border-left: 15px solid rgba(0, 0, 255, 0.225);
+        border-right: 15px solid rgba(0, 0, 255, 0.225);
+        border-top: 15px solid blue;
+        border-bottom: 15px solid rgba(0, 0, 255, 0.225);
+    }
+
+    50% {
+        border-left: 15px solid rgba(0, 0, 255, 0.225);
+        border-right: 15px solid blue;
+        border-top: 15px solid blue;
+        border-bottom: 15px solid rgba(0, 0, 255, 0.225);
+    }
+
+    100% {
+        border-left: 15px solid rgba(0, 0, 255, 0.225);
+        border-right: 15px solid blue;
+        border-top: 15px solid blue;
+        border-bottom: 15px solid blue;
+    }
+}
