@@ -1,17 +1,17 @@
 .color-box-1 {
-	background-color: blue;
+	background-color: rgb(8 0 163);
 	width: 18px;
 	height: 10px;
 	border-radius: 10px;
 }
 .color-box-2 {
-	background-color: blue;
+	background-color: rgb(73 53 255);
 	width: 18px;
 	height: 10px;
 	border-radius: 10px;
 }
 .color-box-3 {
-	background-color: blue;
+	background-color: rgb(133 175 255);
 	width: 18px;
 	height: 10px;
 	border-radius: 10px;

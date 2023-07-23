@@ -1,49 +1,120 @@
-import React from "react";
+import React, { PureComponent } from "react";
+
+
+import {
+	BarChart,
+	Bar,
+	XAxis,
+	YAxis,
+	CartesianGrid,
+	Tooltip,
+	Legend,
+} from "recharts";
+
+
+
+
 import "./Contribution.css";
 
-// *********************************************************************************************
-import { letterFrequency } from "@visx/mock-data";
-import { Group } from "@visx/group";
-import { Bar } from "@visx/shape";
-import { scaleLinear, scaleBand } from "@visx/scale";
-
-// We'll use some mock data from `@visx/mock-data` for this.
-const data = letterFrequency;
-
-// Define the graph dimensions and margins
-const width = 500;
-const height = 500;
-const margin = { top: 20, bottom: 20, left: 20, right: 20 };
-
-// Then we'll create some bounds
-const xMax = width - margin.left - margin.right;
-const yMax = height - margin.top - margin.bottom;
-
-// We'll make some helpers to get at the data we want
-const x = (d) => d.letter;
-const y = (d) => +d.frequency * 100;
-
-// And then scale the graph by our data
-const xScale = scaleBand({
-	range: [0, xMax],
-	round: true,
-	domain: data.map(x),
-	padding: 0.4,
-});
-const yScale = scaleLinear({
-	range: [yMax, 0],
-	round: true,
-	domain: [0, Math.max(...data.map(y))],
-});
-
-// Compose together the scale and accessor functions to get point functions
-const compose = (scale, accessor) => (data) => scale(accessor(data));
-const xPoint = compose(xScale, x);
-const yPoint = compose(yScale, y);
-
-// ********************************************************************************************************88
-
 const Contribution = () => {
+	// *****************************************************************************************
+
+
+	const data = [
+		{
+			name: "20",
+			Employer: 25,
+			TotalInterest: 30,
+			Employee: 40,
+		},
+		{
+			name: "",
+			Employer: 50,
+			TotalInterest: 60,
+			Employee: 80,
+		},
+		{
+			name: "30",
+			Employer: 75,
+			TotalInterest: 90,
+			Employee: 120,
+		},
+		{
+			name: "",
+			Employer: 100,
+			TotalInterest: 120,
+			Employee: 160,
+		},
+		{
+			name: "40",
+			Employer: 125,
+			TotalInterest: 150,
+			Employee: 200,
+		},
+		{
+			name: "",
+			Employer: 150,
+			TotalInterest: 180,
+			Employee: 240,
+		},
+		{
+			name: "50",
+			Employer: 175,
+			TotalInterest: 210,
+			Employee: 280,
+		},
+		{
+			name: "",
+			Employer: 200,
+			TotalInterest: 240,
+			Employee: 320,
+		},
+		{
+			name: "60",
+			Employer: 225,
+			TotalInterest: 270,
+			Employee: 360,
+		},
+		{
+			name: "",
+			Employer: 250,
+			TotalInterest: 300,
+			Employee: 400,
+		},
+		{
+			name: "70",
+			Employer: 275,
+			TotalInterest: 330,
+			Employee: 440,
+		},
+		{
+			name: "",
+			Employer: 300,
+			TotalInterest: 360,
+			Employee: 480,
+		},
+		{
+			name: "80",
+			Employer: 325,
+			TotalInterest: 390,
+			Employee: 520,
+		},
+		{
+			name: "",
+			Employer: 350,
+			TotalInterest: 420,
+			Employee: 560,
+		},
+		{
+			name: "90",
+			Employer: 375,
+			TotalInterest: 450,
+			Employee: 600,
+		}
+	];
+
+	// *****************************************************************************************
+
 	return (
 		<div>
 			<div className="fs-4 fw-bold">Contributions Overtime</div>
@@ -66,12 +137,31 @@ const Contribution = () => {
 				</div>
 			</div>
 
-
 			<section className="py-3">
 				{/* **************************************************** */}
-				stacked bar chart
+
+				<BarChart
+					width={700}
+					height={300}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Legend />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar dataKey="TotalInterest" stackId="a" fill="rgb(133 175 255)" />
+				</BarChart>
+
 				{/* **************************************************** */}
-				
 			</section>
 		</div>
 	);
