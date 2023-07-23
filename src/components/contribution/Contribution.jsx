@@ -1,6 +1,4 @@
 import React, { PureComponent } from "react";
-
-
 import {
 	BarChart,
 	Bar,
@@ -10,16 +8,9 @@ import {
 	Tooltip,
 	Legend,
 } from "recharts";
-
-
-
-
 import "./Contribution.css";
 
 const Contribution = () => {
-	// *****************************************************************************************
-
-
 	const data = [
 		{
 			name: "20",
@@ -110,10 +101,8 @@ const Contribution = () => {
 			Employer: 375,
 			TotalInterest: 450,
 			Employee: 600,
-		}
+		},
 	];
-
-	// *****************************************************************************************
 
 	return (
 		<div>
@@ -137,11 +126,9 @@ const Contribution = () => {
 				</div>
 			</div>
 
-			<section className="py-3">
-				{/* **************************************************** */}
-
+			<section className="py-3 d-none very-large">
 				<BarChart
-					width={680}
+					width={750}
 					height={220}
 					data={data}
 					margin={{
@@ -157,10 +144,90 @@ const Contribution = () => {
 					<Tooltip />
 					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
 					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
-					<Bar dataKey="TotalInterest" stackId="a" fill="rgb(133 175 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
 				</BarChart>
+			</section>
 
-				{/* **************************************************** */}
+			<section className="py-3 d-none xxxl">
+				<BarChart
+					width={650}
+					height={220}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
+				</BarChart>
+			</section>
+
+			<section className="py-3 d-none xxl">
+				<BarChart
+					width={580}
+					height={220}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
+				</BarChart>
+			</section>
+
+			<section className="py-3 d-none xl">
+				<BarChart
+					width={495}
+					height={220}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
+				</BarChart>
 			</section>
 		</div>
 	);
