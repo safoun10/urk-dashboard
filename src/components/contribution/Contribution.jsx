@@ -109,17 +109,17 @@ const Contribution = () => {
 			<div className="fs-4 fw-bold">Contributions Overtime</div>
 
 			<div className="d-flex justify-content-between pt-2">
-				<div className="text-secondary d-flex align-items-center gap-2">
+				<div className="text-secondary d-flex align-items-center gap-2 flex-wrap">
 					<div className="color-box-1"></div>
 					Employer:
 					<span className="fw-bold text-dark">K 73,500</span>
 				</div>
-				<div className="text-secondary d-flex align-items-center gap-2">
+				<div className="text-secondary d-flex align-items-center gap-2 flex-wrap">
 					<div className="color-box-2"></div>
 					Employee:
 					<span className="fw-bold text-dark">K 52,500</span>
 				</div>
-				<div className="text-secondary d-flex align-items-center gap-2">
+				<div className="text-secondary d-flex align-items-center gap-2 flex-wrap">
 					<div className="color-box-3"></div>
 					Total Interest:
 					<span className="fw-bold text-dark">K 244,313</span>
@@ -207,6 +207,31 @@ const Contribution = () => {
 			<section className="py-3 d-none xl">
 				<BarChart
 					width={495}
+					height={220}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
+				</BarChart>
+			</section>
+			<section className="py-3 d-none lg">
+				<BarChart
+					width={550}
 					height={220}
 					data={data}
 					margin={{

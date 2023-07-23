@@ -9,20 +9,20 @@ const Income = () => {
 			<div className="income-head fs-6 text-one">Retirement Income</div>
 			<div className="fs-2 fw-bold">Starting Year 2056</div>
 
-			<div className="row pb-2">
-				<div className="px-4 py-2 col-4">
+			<div className="row pb-2">	
+				<div className="px-4 py-2 col-12 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300,000</div>
 						<div className="text-secondary">My goal</div>
 					</div>
 				</div>
-				<div className="px-4 py-2 col-4">
+				<div className="px-4 py-2 col-6 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">59%</div>
 						<div className="text-secondary">Goal achieved</div>
 					</div>
 				</div>
-				<div className="px-4 py-2 col-4">
+				<div className="px-4 py-2 col-6 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300</div>
 						<div className="text-secondary">
@@ -45,7 +45,7 @@ const Income = () => {
 				</div>
 
 				<div className="row align-items-center">
-					<div className="col-4 d-flex flex-column">
+					<div className="col-12 col-xxl-4 pt-2 d-flex flex-column">
 						<div className="selected-nums">
 							{" "}
 							<span className="fw-bold">Age:</span> Under{" "}
@@ -79,7 +79,7 @@ const Income = () => {
 						</div>
 					</div>
 
-					<div className="col-8">
+					<div className="col-12 col-xxl-8 pt-2">
 						<Donuts></Donuts>
 					</div>
 				</div>

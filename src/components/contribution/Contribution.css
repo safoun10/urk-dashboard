@@ -17,27 +17,32 @@
 	border-radius: 10px;
 }
 
-
 @media only screen and (min-width: 1601px) {
-  .very-large{
-	display: block !important;
-  }
+	.very-large {
+		display: block !important;
+	}
 }
 
 @media only screen and (min-width: 1401px) and (max-width: 1600px) {
-  .xxxl{
-	display: block !important;
-  }
+	.xxxl {
+		display: block !important;
+	}
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
-  .xxl{
-	display: block !important;
-  }
+	.xxl {
+		display: block !important;
+	}
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .xl{
-	display: block !important;
-  }
+	.xl {
+		display: block !important;
+	}
+}
+
+@media only screen and (min-width: 850px) and (max-width: 992px) {
+	.lg{
+		display: block !important;
+	}
 }

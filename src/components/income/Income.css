@@ -1,19 +1,31 @@
-.income-head{
-    color: #5266ff;
+.income-head {
+	color: #5266ff;
 }
 
-.goal-box{
-    border-bottom: 2px solid #5266ff;
-    padding-bottom: 10px;
+.goal-box {
+	border-bottom: 2px solid #5266ff;
+	padding-bottom: 10px;
 }
 
-.selected-nums{
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+.selected-nums {
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
-.income-section{
-    margin-left: -40px;
-    margin-right: 50px;
+.income-section {
+	margin-left: -40px;
+	margin-right: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.income-section {
+		margin-left: -60px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.income-section {
+		margin-left: -45px !important;
+	}
 }
