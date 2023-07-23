@@ -35,4 +35,7 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+	.goal-text{
+		font-size: 14px !important;
+	}
 }

@@ -106,20 +106,20 @@ const Contribution = () => {
 
 	return (
 		<div>
-			<div className="fs-4 fw-bold">Contributions Overtime</div>
+			<div className="fs-4 pt-5 pt-md-0 fw-bold">Contributions Overtime</div>
 
-			<div className="d-flex justify-content-between pt-2">
-				<div className="text-secondary d-flex align-items-center gap-2 flex-wrap">
+			<div className="d-flex justify-content-between pt-md-2 pt-3 pb-md-0 pb-4">
+				<div className="text-secondary d-flex align-items-center justify-content-start gap-2 flex-wrap">
 					<div className="color-box-1"></div>
 					Employer:
 					<span className="fw-bold text-dark">K 73,500</span>
 				</div>
-				<div className="text-secondary d-flex align-items-center gap-2 flex-wrap">
+				<div className="text-secondary d-flex align-items-center justify-content-start gap-2 flex-wrap">
 					<div className="color-box-2"></div>
 					Employee:
 					<span className="fw-bold text-dark">K 52,500</span>
 				</div>
-				<div className="text-secondary d-flex align-items-center gap-2 flex-wrap">
+				<div className="text-secondary d-flex align-items-center justify-content-start gap-2 flex-wrap">
 					<div className="color-box-3"></div>
 					Total Interest:
 					<span className="fw-bold text-dark">K 244,313</span>

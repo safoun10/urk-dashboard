@@ -5,27 +5,27 @@ import Donuts from "../donut/Donuts";
 
 const Income = () => {
 	return (
-		<div className="pt-2 income-section">
+		<div className="pt-5 mt-5 mt-md-0 pt-md-2 income-section">
 			<div className="income-head fs-6 text-one">Retirement Income</div>
 			<div className="fs-2 fw-bold">Starting Year 2056</div>
 
-			<div className="row pb-2">	
+			<div className="row pb-2 pt-3 pt-md-0">	
 				<div className="py-2 col-12 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300,000</div>
-						<div className="text-secondary">My goal</div>
+						<div className="text-secondary goal-text">My goal</div>
 					</div>
 				</div>
 				<div className="py-2 col-6 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">59%</div>
-						<div className="text-secondary">Goal achieved</div>
+						<div className="text-secondary goal-text">Goal achieved</div>
 					</div>
 				</div>
 				<div className="py-2 col-6 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300</div>
-						<div className="text-secondary">
+						<div className="text-secondary goal-text">
 							Est. Monthly Income
 						</div>
 					</div>
