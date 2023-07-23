@@ -3,6 +3,7 @@ import "./Home.css"
 import Profile from '../profile/Profile';
 import Income from '../income/Income';
 import Retirement from '../retirement/Retirement';
+import MobileNav from '../MobileNav/MobileNav';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
                 <div className='col-12 mx-auto col-md-8 col-lg-2 p-0'>
                     <Retirement></Retirement>
                 </div>
+                <MobileNav></MobileNav>
             </div>
         </div>
     );

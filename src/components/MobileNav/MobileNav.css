@@ -1,0 +1,11 @@
+.mobile-nav{
+    background-color: white;
+    height: 60px;
+    margin: 0 !important;
+    position: sticky !important;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    border-radius: 8px 8px 0 0;
+}
