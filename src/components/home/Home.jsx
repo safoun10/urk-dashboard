@@ -14,7 +14,7 @@ const Home = () => {
                 <div className='col-11 mx-auto col-md-7 col-lg-6'>
                     <Income></Income>
                 </div>
-                <div className='col-11 mx-auto col-md-8 col-lg-2'>
+                <div className='col-12 mx-auto col-md-8 col-lg-2 p-0'>
                     <Retirement></Retirement>
                 </div>
             </div>

@@ -47,8 +47,14 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 849px) {
+@media only screen and (min-width: 769px) and (max-width: 849px) {
 	.mlg {
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.md {
 		display: block !important;
 	}
 }

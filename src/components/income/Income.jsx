@@ -37,7 +37,7 @@ const Income = () => {
 			</div>
 
 			<div>
-				<div className="fs-4 fw-bold">
+				<div className="fs-md-4 fs-5 fw-bold">
 					How do I compare to my peers ?
 				</div>
 				<div className="text-secondary pt-1 pb-4">

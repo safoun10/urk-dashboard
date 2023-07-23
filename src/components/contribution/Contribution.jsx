@@ -106,7 +106,9 @@ const Contribution = () => {
 
 	return (
 		<div>
-			<div className="fs-4 pt-5 pt-md-0 fw-bold">Contributions Overtime</div>
+			<div className="fs-4 pt-5 pt-md-0 fw-bold">
+				Contributions Overtime
+			</div>
 
 			<div className="d-flex justify-content-between pt-md-2 pt-3 pb-md-0 pb-4">
 				<div className="text-secondary d-flex align-items-center justify-content-start gap-2 flex-wrap">
@@ -259,6 +261,32 @@ const Contribution = () => {
 			<section className="py-3 d-none mlg">
 				<BarChart
 					width={450}
+					height={220}
+					data={data}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+				>
+					<CartesianGrid strokeDasharray="6" />
+					<XAxis dataKey="name" />
+					<YAxis />
+					<Tooltip />
+					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
+					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
+					<Bar
+						dataKey="TotalInterest"
+						stackId="a"
+						fill="rgb(133 175 255)"
+					/>
+				</BarChart>
+			</section>
+
+			<section className="py-3 d-none md">
+				<BarChart
+					width={350}
 					height={220}
 					data={data}
 					margin={{
