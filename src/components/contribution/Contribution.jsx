@@ -141,8 +141,8 @@ const Contribution = () => {
 				{/* **************************************************** */}
 
 				<BarChart
-					width={700}
-					height={300}
+					width={680}
+					height={220}
 					data={data}
 					margin={{
 						top: 20,
@@ -155,7 +155,6 @@ const Contribution = () => {
 					<XAxis dataKey="name" />
 					<YAxis />
 					<Tooltip />
-					<Legend />
 					<Bar dataKey="Employer" stackId="a" fill="rgb(8 0 163)" />
 					<Bar dataKey="Employee" stackId="a" fill="rgb(73 53 255)" />
 					<Bar dataKey="TotalInterest" stackId="a" fill="rgb(133 175 255)" />

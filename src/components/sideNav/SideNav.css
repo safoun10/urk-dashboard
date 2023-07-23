@@ -1,7 +1,18 @@
 .side {
-	background-color: #ffffff;
+    background-color: #ffffff;
     width: 70px;
     color: black;
     min-height: 100vh;
     text-align: center;
+}
+
+
+.active {
+    background-color: #3e2edf;
+    color: white !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 5px !important;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
 }

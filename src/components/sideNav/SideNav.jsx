@@ -23,7 +23,7 @@ const SideNav = () => {
 					</div>
 				</div>
 				<div className="mt-5 d-flex flex-column gap-4 justify-content-center align-items-center">
-					<GoHome className="fs-4"></GoHome>
+					<GoHome className="fs-4 active"></GoHome>
 					<FaRegNewspaper className="fs-4"></FaRegNewspaper>
 					<FaRegListAlt className="fs-4"></FaRegListAlt>
 					<CgProfile className="fs-4"></CgProfile>
