@@ -3,7 +3,7 @@ import "./Profile.css";
 
 const Profile = () => {
 	return (
-		<div className="pt-4 px-5 profile-section">
+		<div className="pt-4 px-5 profile-section mx-auto">
 			<div className="d-flex align-items-center gap-3 profile-photo-box">
 				<img
 					src="https://i.postimg.cc/R0cZtGy4/istockphoto-477901370-612x612.jpg"
@@ -17,28 +17,28 @@ const Profile = () => {
 			</div>
 
 			<div className="ps-4">
-				<div className="mt-5">
-					<>
+				<div className="mt-5 row w-100">
+					<div className="col-12 col-md-12">
 						<div className="fs-5 text-one fw-bold pb-3">Today</div>
 						<div className="display-6 fw-bold">$19,892</div>
 						<div className="text-secondary pb-3">
 							Account Balance
 						</div>
-					</>
+					</div>
 
-					<>
+					<div className="col-6 col-md-12">
 						<div className="fs-4 fw-bold">$4,000</div>
 						<div className="text-secondary pb-3">
-							Year-to-Date Contributions
+							Year-to-Date <span className="d-none d-md-inline">Contributions</span>
 						</div>
-					</>
+					</div>
 
-					<>
+					<div className="col-6 col-md-12">
 						<div className="fs-4 fw-bold">$1,892</div>
 						<div className="text-secondary pb-3">
 							Total Interest
 						</div>
-					</>
+					</div>
 
 					<select className="btn want-btn">
 						<option>I want to</option>

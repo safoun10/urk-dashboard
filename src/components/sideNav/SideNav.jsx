@@ -8,7 +8,7 @@ import { RxExit } from "react-icons/rx";
 
 const SideNav = () => {
 	return (
-		<div className="side d-flex flex-column justify-content-between align-items-center">
+		<div className="side d-none d-md-flex flex-column justify-content-between align-items-center">
 			<div>
 				<div className="mt-3">
 					<div className="fs-2 text-info">

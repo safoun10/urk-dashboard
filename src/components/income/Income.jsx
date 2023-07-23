@@ -10,19 +10,19 @@ const Income = () => {
 			<div className="fs-2 fw-bold">Starting Year 2056</div>
 
 			<div className="row pb-2">	
-				<div className="px-4 py-2 col-12 col-xxl-4">
+				<div className="py-2 col-12 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300,000</div>
 						<div className="text-secondary">My goal</div>
 					</div>
 				</div>
-				<div className="px-4 py-2 col-6 col-xxl-4">
+				<div className="py-2 col-6 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">59%</div>
 						<div className="text-secondary">Goal achieved</div>
 					</div>
 				</div>
-				<div className="px-4 py-2 col-6 col-xxl-4">
+				<div className="py-2 col-6 col-xxl-4">
 					<div className="goal-box">
 						<div className="fs-4 fw-bold">$300</div>
 						<div className="text-secondary">

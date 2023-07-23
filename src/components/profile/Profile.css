@@ -45,3 +45,17 @@
 		margin-right: 40px !important;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.profile-section {
+		margin-right: 0px !important;
+		margin-top: 35px;
+		border-radius: 18px;
+		min-height: 100%;
+	}
+	.profile-photo-box {
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+}
